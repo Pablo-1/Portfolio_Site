@@ -39,6 +39,10 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container-fluid {
   max-width: 1200px;
 }
@@ -341,3 +345,7 @@ p {
     padding: 25px;
   }
 }
+
+
+  
+
