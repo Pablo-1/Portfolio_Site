@@ -1,21 +1,3 @@
-/**
-
-Mini Profile Template
-
-https://templatemo.com/tm-530-mini-profile
-
-
-Color Codes
-------------
-brown: #986665;
-green: #98cb00;
-orange: #cc6733;
-blue: #3398cc;
-dark-gray: #676767;
-light-gray: #999999;
-text-gray: #6b6b6b;
-
-*/
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -28,6 +10,10 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
+}
+
+p{
+  text-align: center;
 }
 
 a,
@@ -83,6 +69,7 @@ a:hover {
 .tm-brand-container-inner {
   max-width: 580px;
   width: 100%;
+  border-radius: 25px;
 }
 
 .tm-brand-container {
@@ -118,6 +105,7 @@ a:hover {
 
 .tm-welcome-title {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .tm-welcome-left {
@@ -217,44 +205,70 @@ p {
   Contact section
 */
 
-#tmContact {
-  padding-top: 95px;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.tm-contact-item {
-  width: 33.3334%;
-  max-width: 345px;
-  height: auto;
-  min-height: 420px;
-  margin-right: 35px;
-  background-color: white;
-  padding: 54px 34px 44px;
-}
-
-.tm-contact-item:last-child {
-  margin-right: 0;
-}
-
-.tm-contact-items-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 130px;
-}
-
-.tm-contact-item-icon {
-  margin-bottom: 45px;
+.socials {
+  display: grid;
+  height: 100%;
   width: 100%;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
+  padding: 100px;
 }
 
-#tmContactForm {
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 20px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon{
+  background: #4267B2;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button span{
+  color: #4267B2;
+}
+
+#tmFeedbackForm {
   width: 100%;
   max-width: 680px;
-  padding: 45px 45px 30px;
-  margin-bottom: 95px;
+  padding: 45px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 .form-group {
@@ -280,80 +294,6 @@ p {
   background-color: #676767;
 }
 
-.tm-copyright-text {
-  margin-bottom: 30px;
-}
-
 .tm-link {
   color: #676767;
 }
-
-@media (max-width: 1054px) {
-  .tm-contact-item-icon {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 991px) {
-  .tm-contact-items-container {
-    flex-direction: column;
-  }
-
-  .tm-contact-item {
-    width: auto;
-    max-width: 680px;
-    min-height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-
-  .tm-contact-item:last-child {
-    margin-right: auto;
-    margin-bottom: 0;
-  }
-
-  #tmContactForm {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 730px) {
-  .tm-portfolio-item {
-    flex-direction: column;
-  }
-
-  .tm-portfolio-name {
-    justify-content: center;
-  }
-
-  .tm-portfolio-name,
-  .tm-portfolio-description {
-    width: 100%;
-  }
-
-  .tm-portfolio-description {
-    padding: 20px 30px;
-  }
-}
-
-@media (max-width: 572px) {
-  .tm-brand-container {
-    padding: 45px;
-  }
-}
-
-@media (max-width: 443px) {
-  .tm-brand-name {
-    font-size: 3rem;
-  }
-
-  .tm-brand-container {
-    padding: 25px;
-  }
-}
-
-
-  
-
