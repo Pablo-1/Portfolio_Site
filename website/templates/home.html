@@ -24,7 +24,7 @@
             <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
               <div class="tm-brand-container text-center">
                 <h1 class="tm-brand-name">Pawel Gonczarewicz</h1>
-                <h3 class="tm-brand-description mb-0">Software Engineer</h3>
+                <h3 class="tm-brand-description mb-0">Junior Software Engineer</h3>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
               </div>
               <div class="tm-portfolio-description">
                 <h3 class="text-center">
-                  <a href="https://github.com/Pablo-1/finalCapstone/tree/master/task_manager_2">Shoe Warehouse Inventory</a>
+                  <a href="https://github.com/Pablo-1/finalCapstone/tree/master/inventory">Shoe Warehouse Inventory</a>
                 </h3>
                 <p class="mb-0">
                   Program written in Python managing shoe warehouse inventory. The inventory data is being stored in inventory.txt file.
@@ -117,26 +117,28 @@
         <div class="row">
           <div class="col-12">
             <div class="socials">
-              <h1 class="tm-portfolio-title tm-bg-black-transparent tm-brand-container tm-text-white">Lets connect</h1>
-              <div class="wrapper">
+              <div class="wrapper tm-bg-black-transparent tm-brand-container">
+                <h1 class="tm-portfolio-title tm-text-white">Lets connect</h1>
                   <div class="button">
-                    <div class="icon">
-                        <a href="https://www.linkedin.com/in/pawel-gonczarewicz/"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a href="https://www.linkedin.com/in/pawel-gonczarewicz/"><span>Linkedin</span></a>
+                    <a href="https://www.linkedin.com/in/pawel-gonczarewicz/"></a>
+                      <div class="icon">
+                        <i class="fab fa-linkedin"></i>
+                      </div>
+                    <span>Linkedin</span></a>
                   </div>
                   <div class="button">
-                    <div class="icon">
-                        <a href="https://github.com/Pablo-1"><i class="fab fa-github"></i></a>
-                    </div>
-                    <a href="https://github.com/Pablo-1"><span>Github</span></a>
+                    <a href="https://github.com/Pablo-1">
+                      <div class="icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <span>Github</span></a>
                   </div>
                   <div class="button">
                     <a href="https://twitter.com/@Pawel17131529">
-                    <div class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <span>Twitter</span></a>
+                      <div class="icon">
+                          <i class="fab fa-twitter"></i>
+                      </div>
+                      <span>Twitter</span></a>
                   </div>
               </div>
             </div>
@@ -147,39 +149,14 @@
           <div class="col-12">
             <h2 class="text-center">Please leave feedback.</h2>
             <form
-              action="home.html"
+              action=""
               method="POST"
               id="tmFeedbackForm"
-              class="tm-bg-white-transparent"
+              class="tm-bg-white-transparent-round"
             >
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="alias"
-                  name="alias_name"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="alias"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  rows="4"
-                  id="feedack"
-                  name="feedback_message"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="your feedback goes here... "
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button
-                  type="submit"
-                  class="btn tm-btn-submit rounded-0 text-white"
-                >
-                  Submit
-                </button>
-              </div>
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit">
             </form>
           </div>
         </div>
