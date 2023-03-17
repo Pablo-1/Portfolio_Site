@@ -199,6 +199,11 @@ a:hover {
   color: white;
 }
 
+.tm-text-shadow {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 5px 5px #000000;
+}
+
 .tm-title-small {
   font-size: 1.3rem;
 }
