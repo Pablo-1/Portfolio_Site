@@ -22,3 +22,4 @@ class FeedbackForm(forms.ModelForm):
                 'placeholder':'Your feedback goes here'
             })
         }
+
