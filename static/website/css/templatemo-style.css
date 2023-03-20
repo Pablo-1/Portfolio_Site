@@ -66,7 +66,9 @@ a:hover {
   display: flex;
   align-items: center;
 }
-
+.img{
+  margin: auto;
+}
 .tm-brand-container-outer {
   margin-top: -400px;
 }
@@ -361,11 +363,19 @@ p {
   .tm-brand-container {
     padding: 45px;
   }
+
+  img#profile-photo{
+    display: none;
+  }
 }
 
 @media (max-width: 443px) {
   .tm-brand-name {
     font-size: 3rem;
+  }
+
+  img#profile-photo{
+    display: none;
   }
 
   .tm-brand-container {
