@@ -313,6 +313,27 @@ p {
   .tm-contact-item-icon {
     margin-bottom: 15px;
   }
+  .wrapper .button:hover .icon{
+  background: #4267B2;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button span{
+  color: #4267B2;
+}
 }
 
 @media (max-width: 991px) {
@@ -356,6 +377,10 @@ p {
 
   .tm-portfolio-description {
     padding: 20px 30px;
+  }
+
+  img#profile-photo{
+    display: none;
   }
 }
 
